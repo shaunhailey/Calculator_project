@@ -1,64 +1,54 @@
-//main.js
-let workingArray = []
 
-document.getElementById("1").addEventListener("click", function() {
-  workingArray.push(1)
-  }
+let leftArray = []
+let rightArray = []
+let displayArray = []
+let hearButton = document.querySelectorAll('button')
 
-document.getElementById("2").addEventListener("click", function() {
-  workingArray.push(2)
-}
+hearButton.forEach(button => {
+  button.addEventListener('click', event => {
+    console.log(event.target)
+    let avalue = document.querySelector(.a)
+    element.textcontent = string(leftArray)
+    let bvalue = document.querySelector(.b)
+    element.textcontent = string(rightArray)
 
-document.getElementById("3").addEventListener("click", function() {
-  workingArray.push(3)
-}
+    displayArray.push(event.target)
+    if (Number.isInteger(event.target))
+    displayArray.push(event.target)
+    else if (displayArray.includes('/' || 'X' || '+' || '-')) {
+      rightArray.push(event.target)
+      displayArray.push(event.target)
+    } else if (Number.isInteger(event.target)) {
+      displayArray.push(event.target)
+      leftArray.push(event.target)
+    } else if (event.target === '=') {
+      displayArray.includes('+')
+      return (document.getElementById('output') = leftArray.value + rightArray.value)
+    } else if (event.target === '=') {
+      displayArray.includes('-')
+      return (document.getElementById('output') = leftArray.value - rightArray.value)
+    } else if (event.target === '=') {
+      displayArray.includes('X')
+      return (document.getElementById('output') = leftArray.value * rightArray.value)
+    } else if (event.target === '=') {
+      displayArray.includes('/')
+      return (document.getElementById('output') = leftArray.value / rightArray.value)
+    } else if (event.target === 'C') {
+      displayArray.splice(0, displayArray.length)
+      leftArray.splice(0, leftArray.length)
+      rightArray.splice(0, rightArray.length)
+    }
+  })
+})
 
-document.getElementById("4").addEventListener("click", function() {
-  workingArray.push(4)
-}
-
-document.getElementById("5").addEventListener("click", function() {
-  workingArray.push(5)
-}
-
-document.getElementById("6").addEventListener("click", function() {
-  workingArray.push(6)
-}
-
-document.getElementById("7").addEventListener("click", function() {
-  workingArray.push(7)
-}
-
-document.getElementById("8").addEventListener("click", function() {
-  workingArray.push(8)
-}
-
-document.getElementById("9").addEventListener("click", function() {
-  workingArray.push(9)
-}
-
-document.getElementById("0").addEventListener("click", function() {
-  workingArray.push(0)
-}
-
-document.getElementById("X").addEventListener("click", function() {
-  workingArray.push(X)
-}
-
-document.getElementById("/").addEventListener("click", function() {
-  workingArray.push(/)
-}
-
-document.getElementById("+").addEventListener("click", function() {
-  workingArray.push(+)
-}
-
-document.getElementById("-").addEventListener("click", function() {
-  workingArray.push(-)
-}
-
-document.getElementById("=").addEventListener("click", function() {
-}
-
-document.getElementById("C").addEventListener("click", function() {
-}
+// let computation = hearButton.value
+// if ((computation = C)) {
+//   workingArray.splice(0, workingArray.length) && displayArray.splice(0, displayArray.length)
+// } else if ((computation = equals)) {
+//   displayArray.splice(0, displayArray.length)
+//   let Result = valueOf(workingArray)
+//   return (document.getElementById('output').innerHTML = workingArray.value)
+// } else {
+//   workingArray.push[computation]
+//   displayArray.push[computation]
+// }

@@ -9,14 +9,17 @@
  </head>
  <body>
    <div class="wrapper">
-     <form class="Calc" action="index.html" method="post">
 
   <div class="one"></div>
     <div class="a1">
       <button type="button" id="C" name="C">C</button>
     </div>
       <div class="a2">
-        <output name="result"></output>
+        <form oninput="display.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="number" name="b" value="bvalue" class="b">
+        <input type="number" name="a" value="avalue" class="a">
+        <output name="display"></output>
+      </form>
       </div>
 
 
@@ -86,7 +89,6 @@
             <button type="button" id="plus" name="+">+</button>
           </div>
 
-        </form>
   </div>
 
 

@@ -17,13 +17,14 @@ The remainder of the calculator is dark green with white text.
 ******
 
 Functionally, each button should push its associated character
-to the display via an array. Upon the press of the "=" symbol,
-the result of the equation should replace the array in the display.
-Alternately, the array and display should be cleared upon user press
+to the display via a string variable. Upon the press of the "=" symbol,
+the result of the equation should replace the string in the display.
+Alternately, the string and display should be cleared upon user press
 of the "C" button.
 
-Initial strategy is to have each button except '=' and 'C' go to an array.
-The array must be pushed in real time to the display line. Upon user press
-of '=', the array must be converted to proper maths, the array removed from the
-display, and replaced by the result of the maths. User input of 'C'  button must
-wipe both the array and display. 
+Initial strategy is to have each button except '=' and 'C' go to a string.
+The string must be pushed in real time to the display line (how to push a string
+to display in real time?). Upon user press of '=', the string must be converted
+to proper maths ("proper maths" needs to be specified), the string removed from
+the display, and replaced by the result of the maths. User input of 'C' button
+must wipe both the string and display.
